@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blanchard-художественная галерея</title>
-<!--   <link href="./img/favicon.svg" rel="shortcut icon" type="image/x-icon"> -->
+  <link href="img/favicon.svg" rel="shortcut icon" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css" rel="stylesheet">
   <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
@@ -19,243 +19,269 @@
 </head>
 
 <body>
-  <div class="top-content">
-    <header class="header">
-      <div class="header__top top">
-        <div class="container header__container flex">
-          <button class="top__burger burger btn" aria-label="Открыть меню навигации">
-            <span class="burger__line"></span>
-            <span class="burger__line"></span>
-            <span class="burger__line"></span>
-          </button>
-          <a class="top__link">
-            <picture>
-              <source srcset="img/logo(320).svg" media="(max-width: 576px)">
-              <source srcset="img/logo(1024).svg" media="(max-width: 1224px)">
-              <img src="img/logo.svg" alt="Логотип Blanchard">
-            </picture>
-          </a>
-          <div class="top__right flex">
-            <nav class="top__nav nav">
-              <button class="top__btn-close btn" aria-label="Закрыть меню навигации"></button>
-              <ul class="nav__list flex">
-                <li class="nav__item">
-                  <a class="nav__link js-scroll-link" href="#about">
-                    <span class="nav__desc desc-focuse"> О нас</span>
-                  </a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link js-scroll-link" href="#gallery">
-                    <span class="nav__desc desc-focuse">Галерея</span>
-                  </a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link js-scroll-link" href="#catalog">
-                    <span class="nav__desc desc-focuse">Каталог</span>
-                  </a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link js-scroll-link" href="#event">
-                    <span class="nav__desc desc-focuse">События</span>
-                  </a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link js-scroll-link" href="#projects">
-                    <span class="nav__desc desc-focuse">Проекты</span>
-                  </a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link js-scroll-link" href="#contaсts">
-                    <span class="nav__desc desc-focuse">Контакты</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-            <a class="header__link desc-focuse" href="#" aria-label="Кнопка войти">
-              <span class="header__link-icon">
-                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z">
-                  </path>
-                </svg>
-              </span>
-              Войти
-            </a>
-          </div>
-          <div class="top__search search flex">
-            <button class="btn search__open search__btn">
-              <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="9.15446" height="2.28862"
-                  transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)"></rect>
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z">
-                </path>
-              </svg>
-            </button>
-            <div class="top__form flex">
-              <form class="search__form form flex" action="#" method="post">
-                <button class="btn form__btn search__btn" type="submit">
-                  <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="9.15446" height="2.28862"
-                      transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)"></rect>
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z">
-                    </path>
-                  </svg>
-                </button>
-                <input class="form__search" type="text">
-              </form>
-              <button class="btn search__form-close">
-                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="29.567" height="2.9567"
-                    transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.09375 0)"></rect>
-                  <rect width="29.567" height="2.9567"
-                    transform="matrix(0.707093 -0.707121 0.707093 0.707121 0 20.9074)"></rect>
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="header__bottom bottom">
-        <div class="container header__container flex">
-          <nav class="bottom__nav">
-            <ul class="bottom__list flex">
-              <li class="bottom__item">
-                <button class="btn bottom__menu">
-                  <span class="desc-focuse bottom-desc">Реализм</span>
-                </button>
-                <div class="bottom__dropdown dropdown">
-                  <div class="dropdown__simplebar" data-simplebar>
-                    <ul class="dropdown__list dropdown-one">
-                      <li class="dropdown__item">
-                        <a class="dropdown__link" href="#">Тинторетто</a>
-                      </li>
-                      <li class="dropdown__item">
-                        <a class="dropdown__link" href="#">Фридрих</a>
-                      </li>
-                      <li class="dropdown__item">
-                        <a class="dropdown__link" href="#">Леонардо</a>
-                      </li>
-                      <li class="dropdown__item">
-                        <a class="dropdown__link" href="#">Верроккьо</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+  <header class="header">
+    <div class="header__top top">
+      <div class="container header__container flex">
+        <button class="top__burger burger btn" aria-label="Открыть меню навигации">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+        <a class="top__link" href="#">
+          <img class="logo-img" src="img/logo.svg" alt="Логотип Blanchard">
+        </a>
+        <div class="top__right flex">
+          <nav class="top__nav nav">
+            <button class="top__btn-close btn" aria-label="Закрыть меню навигации"></button>
+            <ul class="nav__list flex">
+              <li class="nav__item">
+                <a class="nav__link js-scroll-link" href="#about">
+                  <span class="nav__desc desc-focuse"> О нас</span>
+                </a>
               </li>
-              <li class="bottom__item">
-                <button class="btn bottom__menu">
-                  <span class="desc-focuse bottom-desc">Импрессионизм</span>
-                </button>
-                <div class="bottom__dropdown dropdown">
-                  <div class="dropdown__simplebar" data-simplebar>
-                    <ul class="dropdown__list dropdown-two">
-                      <li class="dropdown__item">
-                        <a class="dropdown__link" href="#">Моне</a>
-                      </li>
-                      <li class="dropdown__item">
-                        <a class="dropdown__link" href="#">Сислей</a>
-                      </li>
-                      <li class="dropdown__item">
-                        <a class="dropdown__link" href="#">Мане</a>
-                      </li>
-                      <li class="dropdown__item">
-                        <a class="dropdown__link" href="#">Ренуар</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+              <li class="nav__item">
+                <a class="nav__link js-scroll-link" href="#gallery">
+                  <span class="nav__desc desc-focuse">Галерея</span>
+                </a>
               </li>
-              <li class="bottom__item">
-                <button class="btn bottom__menu">
-                  <span class="desc-focuse bottom-desc">Постимпрессионизм</span>
-                </button>
-                <div class="bottom__dropdown dropdown">
-                  <div class="dropdown__simplebar" data-simplebar>
-                    <ul class="dropdown__list dropdown-three">
-                      <li class="dropdown__item">
-                        <a class="dropdown__link" href="#">Ван Гог</a>
-                      </li>
-                      <li class="dropdown__item">
-                        <a class="dropdown__link" href="#">Сезанн</a>
-                      </li>
-                      <li class="dropdown__item">
-                        <a class="dropdown__link" href="#">Гоген</a>
-                      </li>
-                      <li class="dropdown__item">
-                        <a class="dropdown__link" href="#">Сёра</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+              <li class="nav__item">
+                <a class="nav__link js-scroll-link" href="#catalog">
+                  <span class="nav__desc desc-focuse">Каталог</span>
+                </a>
               </li>
-              <li class="bottom__item">
-                <button class="btn bottom__menu">
-                  <span class="desc-focuse bottom-desc">Авангард</span>
-                </button>
-                <div class="bottom__dropdown dropdown">
-                  <div class="dropdown__simplebar" data-simplebar>
-                    <ul class="dropdown__list dropdown-four">
-                      <li class="dropdown__item">
-                        <a class="dropdown__link" href="#">Кандинский</a>
-                      </li>
-                      <li class="dropdown__item">
-                        <a class="dropdown__link" href="#">Маринетти</a>
-                      </li>
-                      <li class="dropdown__item">
-                        <a class="dropdown__link" href="#">Малевич</a>
-                      </li>
-                      <li class="dropdown__item">
-                        <a class="dropdown__link" href="#">Пикассо</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+              <li class="nav__item">
+                <a class="nav__link js-scroll-link" href="#event">
+                  <span class="nav__desc desc-focuse">События</span>
+                </a>
               </li>
-              <li class="bottom__item">
-                <button class="btn bottom__menu">
-                  <span class="desc-focuse bottom-desc"> Футуризм</span>
-                </button>
-                <div class="bottom__dropdown dropdown">
-                  <div class="dropdown__simplebar" data-simplebar>
-                    <ul class="dropdown__list dropdown-five">
-                      <li class="dropdown__item">
-                        <a class="dropdown__link" href="#">Карра</a>
-                      </li>
-                      <li class="dropdown__item">
-                        <a class="dropdown__link" href="#">Прателла</a>
-                      </li>
-                      <li class="dropdown__item">
-                        <a class="dropdown__link" href="#">Северини</a>
-                      </li>
-                      <li class="dropdown__item">
-                        <a class="dropdown__link" href="#">Балла</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+              <li class="nav__item">
+                <a class="nav__link js-scroll-link" href="#projects">
+                  <span class="nav__desc desc-focuse">Проекты</span>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link js-scroll-link" href="#contaсts">
+                  <span class="nav__desc desc-focuse">Контакты</span>
+                </a>
               </li>
             </ul>
           </nav>
-          <div class="bottom__search search">
-            <form class="form flex" action="#" method="post">
-              <button class="btn form__btn-bottom" aria-label="Начать поиск" type="submit">
-                <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="6.8678" height="1.71695"
-                    transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)"></rect>
+          <a class="header__link desc-focuse" href="#" aria-label="Кнопка войти">
+            <span class="header__link-icon">
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z">
+                </path>
+              </svg>
+            </span>
+            Войти
+          </a>
+        </div>
+        <div class="top__search search flex">
+          <button class="btn search__open search__btn" aria-label="Открыть форму поиска">
+            <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="9.15446" height="2.28862"
+                transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)"></rect>
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z">
+              </path>
+            </svg>
+          </button>
+          <div class="top__form flex">
+            <form class="search__form form flex" action="#" method="post">
+              <button class="btn form__btn search__btn" aria-label="Начать поиск" type="submit">
+                <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="9.15446" height="2.28862"
+                    transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)"></rect>
                   <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M12.0967 18C7.53016 18 3.99668 14.3229 3.99668 10C3.99668 5.67715 7.53016 2 12.0967 2C16.6632 2 20.1967 5.67715 20.1967 10C20.1967 14.3229 16.6632 18 12.0967 18ZM12.0967 20C6.57383 20 2.09668 15.5228 2.09668 10C2.09668 4.47715 6.57383 0 12.0967 0C17.6195 0 22.0967 4.47715 22.0967 10C22.0967 15.5228 17.6195 20 12.0967 20Z">
+                    d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z">
                   </path>
                 </svg>
               </button>
-              <input class="form__search form__search-bottom" aria-label="Введите текст" type="text"
-                placeholder="Поиск по сайту">
+              <input class="form__search" type="text">
             </form>
+            <button class="btn search__form-close" aria-label="Закрыть форму поиска">
+              <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="29.567" height="2.9567" transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.09375 0)">
+                </rect>
+                <rect width="29.567" height="2.9567" transform="matrix(0.707093 -0.707121 0.707093 0.707121 0 20.9074)">
+                </rect>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
-    </header>
+    </div>
+    <div class="header__bottom bottom">
+      <div class="container header__container flex">
+        <nav class="bottom__nav">
+          <ul class="bottom__list flex">
+            <li class="bottom__item">
+              <button class="btn bottom__menu" aria-label="Раскрывающегося список">
+                <span class="desc-focuse bottom-desc">Реализм</span>
+              </button>
+              <div class="bottom__dropdown dropdown">
+                <div class="dropdown__simplebar" data-simplebar>
+                  <ul class="dropdown__list dropdown-one">
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">Тинторетто</a>
+                    </li>
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">Фридрих</a>
+                    </li>
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">Леонардо</a>
+                    </li>
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">Верроккьо</a>
+                    </li>
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">Леонардо</a>
+                    </li>
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">Верроккьо</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="bottom__item">
+              <button class="btn bottom__menu" aria-label="Раскрывающегося список">
+                <span class="desc-focuse bottom-desc">Импрессионизм</span>
+              </button>
+              <div class="bottom__dropdown dropdown">
+                <div class="dropdown__simplebar" data-simplebar>
+                  <ul class="dropdown__list dropdown-two">
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">Моне</a>
+                    </li>
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">Сислей</a>
+                    </li>
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">Мане</a>
+                    </li>
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">Ренуар</a>
+                    </li>
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">Леонардо</a>
+                    </li>
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">Верроккьо</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="bottom__item">
+              <button class="btn bottom__menu" aria-label="Раскрывающегося список">
+                <span class="desc-focuse bottom-desc">Постимпрессионизм</span>
+              </button>
+              <div class="bottom__dropdown dropdown">
+                <div class="dropdown__simplebar" data-simplebar>
+                  <ul class="dropdown__list dropdown-three">
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">Ван Гог</a>
+                    </li>
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">Сезанн</a>
+                    </li>
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">Гоген</a>
+                    </li>
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">Сёра</a>
+                    </li>
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">Леонардо</a>
+                    </li>
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">Верроккьо</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="bottom__item">
+              <button class="btn bottom__menu" aria-label="Раскрывающегося список">
+                <span class="desc-focuse bottom-desc">Авангард</span>
+              </button>
+              <div class="bottom__dropdown dropdown">
+                <div class="dropdown__simplebar" data-simplebar>
+                  <ul class="dropdown__list dropdown-four">
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">Кандинский</a>
+                    </li>
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">Маринетти</a>
+                    </li>
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">Малевич</a>
+                    </li>
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">Пикассо</a>
+                    </li>
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">Леонардо</a>
+                    </li>
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">Верроккьо</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="bottom__item">
+              <button class="btn bottom__menu" aria-label="Раскрывающегося список">
+                <span class="desc-focuse bottom-desc"> Футуризм</span>
+              </button>
+              <div class="bottom__dropdown dropdown">
+                <div class="dropdown__simplebar" data-simplebar>
+                  <ul class="dropdown__list dropdown-five">
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">Карра</a>
+                    </li>
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">Прателла</a>
+                    </li>
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">Северини</a>
+                    </li>
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">Балла</a>
+                    </li>
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">Леонардо</a>
+                    </li>
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">Верроккьо</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="bottom__search search">
+          <form class="form flex" action="#" method="post">
+            <button class="btn form__btn-bottom" aria-label="Начать поиск" type="submit">
+              <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="6.8678" height="1.71695"
+                  transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)"></rect>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12.0967 18C7.53016 18 3.99668 14.3229 3.99668 10C3.99668 5.67715 7.53016 2 12.0967 2C16.6632 2 20.1967 5.67715 20.1967 10C20.1967 14.3229 16.6632 18 12.0967 18ZM12.0967 20C6.57383 20 2.09668 15.5228 2.09668 10C2.09668 4.47715 6.57383 0 12.0967 0C17.6195 0 22.0967 4.47715 22.0967 10C22.0967 15.5228 17.6195 20 12.0967 20Z">
+                </path>
+              </svg>
+            </button>
+            <input class="form__search form__search-bottom" aria-label="Введите текст" type="text"
+              placeholder="Поиск по сайту">
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
     <section class="hero">
       <div class="container hero__container">
         <div class="hero__content">
@@ -268,18 +294,16 @@
           <a class="btn hero__btn js-scroll-link" href="#contaсts">Подписаться на рассылку</a>
         </div>
       </div>
-    </section>
-    <div class="slider-wrapper">
-      <div class="js-hero-swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide slide slide-1"></div>
-          <div class="swiper-slide slide slide-2"></div>
-          <div class="swiper-slide slide slide-3"></div>
+      <div class="slider-wrapper">
+        <div class="js-hero-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide slide-1"></div>
+            <div class="swiper-slide slide slide-2"></div>
+            <div class="swiper-slide slide slide-3"></div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-  <main>
+    </section>
     <section class="about" id="about">
       <div class="container">
         <h2 class="about__title title">О нас</h2>
@@ -332,94 +356,107 @@
               <div class="text-navigation"></div>
               <button class="btn swiper-btn gallery__btn swiper-top-next" aria-label="Листать слайдер вперед"></button>
             </div>
-            <div class="swiper-wrapper">
-              <button class="gallery__card swiper-slide slide1 btn" data-animation="fadeInUp" data-btn="modal-two"
-                data-speed="700" aria-label="Информация о живописи Казимир Малевич-Торс">
-                <picture>
-                  <source srcset="img/gallery-one(320).jpg" media="(max-width: 576px)">
-                  <source srcset="img/gallery-one(768).jpg" media="(max-width: 968px)">
-                  <source srcset="img/gallery-one(1024).jpg" media="(max-width: 1024px)">
-                  <img class="swiper-image" src="img/gallery-one.jpg" alt="Казимир Малевич-Торс">
-                </picture>
-              </button>
-              <button class="gallery__card swiper-slide slide2 btn" data-animation="fadeInUp" data-btn="modal-two"
-                data-speed="700" aria-label="Информация о живописи Казимир Малевич-Женщины с граблями">
-                <picture>
-                  <source srcset="img/gallery-two(320).jpg" media="(max-width: 576px)">
-                  <source srcset="img/gallery-two(768).jpg" media="(max-width: 968px)">
-                  <source srcset="img/gallery-two(1024).jpg" media="(max-width: 1024px)">
-                  <img class="swiper-image" src="img/gallery-two.jpg" alt="Казимир Малевич-Женщины с граблями">
-                </picture>
-              </button>
-              <button class="gallery__card swiper-slide slide3 btn" data-animation="fadeInUp" data-btn="modal-two"
-                data-speed="700" aria-label="Информация о живописи Казимир Малевич-Сбор урожая">
-                <picture>
-                  <source srcset="img/gallery-three(320).jpg" media="(max-width: 576px)">
-                  <source srcset="img/gallery-three(768).jpg" media="(max-width: 968px)">
-                  <source srcset="img/gallery-three(1024).jpg" media="(max-width: 1024px)">
-                  <img class="swiper-image" src="img/gallery-three.jpg" alt="Казимир Малевич-Сбор урожая">
-                </picture>
-              </button>
-              <button class="gallery__card swiper-slide slide4 btn" data-animation="fadeInUp" data-btn="modal-two"
-                data-speed="700" aria-label="Информация о живописи Иван Клюн-Супрематизм">
-                <picture>
-                  <source srcset="img/gallery-four(320).jpg" media="(max-width: 576px)">
-                  <source srcset="img/gallery-four(768).jpg" media="(max-width: 968px)">
-                  <source srcset="img/gallery-four(1024).jpg" media="(max-width: 1024px)">
-                  <img class="swiper-image" src="img/gallery-four.jpg" alt="Иван Клюн-Супрематизм">
-                </picture>
-              </button>
-              <button class="gallery__card swiper-slide slide5 btn" data-animation="fadeInUp" data-btn="modal-two"
-                data-speed="700" aria-label="Информация о живописи Казимир Малевич-Женщина с ведрами">
-                <picture>
-                  <source srcset="img/gallery-five(320).jpg" media="(max-width: 576px)">
-                  <source srcset="img/gallery-five(768).jpg" media="(max-width: 968px)">
-                  <source srcset="img/gallery-five(1024).jpg" media="(max-width: 1024px)">
-                  <img class="swiper-image" src="img/gallery-five.jpg" alt="Казимир Малевич-Женщина с ведрами">
-                </picture>
-              </button>
-              <button class="gallery__card swiper-slide slide6 btn" data-animation="fadeInUp" data-btn="modal-two"
-                data-speed="700" aria-label="Информация о живописи Казимир Малевич-Супрематизм">
-                <picture>
-                  <source srcset="img/gallery-six(320).jpg" media="(max-width: 576px)">
-                  <source srcset="img/gallery-six(768).jpg" media="(max-width: 968px)">
-                  <source srcset="img/gallery-six(1024).jpg" media="(max-width: 1024px)">
-                  <img class="swiper-image" src="img/gallery-six.jpg" alt="Казимир Малевич-Супрематизм">
-                </picture>
-              </button>
-            </div>
+            <ul class="gallery__list swiper-wrapper">
+              <li class="gallery__item swiper-slide">
+                <button class="gallery__card slide1 btn" tabindex="-1" data-animation="fadeInUp" data-btn="modal-two"
+                  data-speed="700" aria-label="Информация о живописи Казимир Малевич-Торс">
+                  <picture>
+                    <source srcset="img/gallery-one(320).jpg" media="(max-width: 576px)">
+                    <source srcset="img/gallery-one(768).jpg" media="(max-width: 968px)">
+                    <source srcset="img/gallery-one(1024).jpg" media="(max-width: 1024px)">
+                    <img class="swiper-image" src="img/gallery-one.jpg" alt="Казимир Малевич-Торс">
+                  </picture>
+                </button>
+              </li>
+              <li class="gallery__item swiper-slide">
+                <button class="gallery__card slide2 btn" tabindex="-1" data-animation="fadeInUp" data-btn="modal-two"
+                  data-speed="700" aria-label="Информация о живописи Казимир Малевич-Женщины с граблями">
+                  <picture>
+                    <source srcset="img/gallery-two(320).jpg" media="(max-width: 576px)">
+                    <source srcset="img/gallery-two(768).jpg" media="(max-width: 968px)">
+                    <source srcset="img/gallery-two(1024).jpg" media="(max-width: 1024px)">
+                    <img class="swiper-image" src="img/gallery-two.jpg" alt="Казимир Малевич-Женщины с граблями">
+                  </picture>
+                </button>
+              </li>
+              <li class="gallery__item swiper-slide">
+                <button class="gallery__card slide3 btn" tabindex="-1" data-animation="fadeInUp" data-btn="modal-two"
+                  data-speed="700" aria-label="Информация о живописи Казимир Малевич-Сбор урожая">
+                  <picture>
+                    <source srcset="img/gallery-three(320).jpg" media="(max-width: 576px)">
+                    <source srcset="img/gallery-three(768).jpg" media="(max-width: 968px)">
+                    <source srcset="img/gallery-three(1024).jpg" media="(max-width: 1024px)">
+                    <img class="swiper-image" src="img/gallery-three.jpg" alt="Казимир Малевич-Сбор урожая">
+                  </picture>
+                </button>
+              </li>
+              <li class="gallery__item swiper-slide">
+                <button class="gallery__card slide4 btn" tabindex="-1" data-animation="fadeInUp" data-btn="modal-two"
+                  data-speed="700" aria-label="Информация о живописи Иван Клюн-Супрематизм">
+                  <picture>
+                    <source srcset="img/gallery-four(320).jpg" media="(max-width: 576px)">
+                    <source srcset="img/gallery-four(768).jpg" media="(max-width: 968px)">
+                    <source srcset="img/gallery-four(1024).jpg" media="(max-width: 1024px)">
+                    <img class="swiper-image" src="img/gallery-four.jpg" alt="Иван Клюн-Супрематизм">
+                  </picture>
+                </button>
+              </li>
+              <li class="gallery__item swiper-slide">
+                <button class="gallery__card slide5 btn" tabindex="-1" data-animation="fadeInUp" data-btn="modal-two"
+                  data-speed="700" aria-label="Информация о живописи Казимир Малевич-Женщина с ведрами">
+                  <picture>
+                    <source srcset="img/gallery-five(320).jpg" media="(max-width: 576px)">
+                    <source srcset="img/gallery-five(768).jpg" media="(max-width: 968px)">
+                    <source srcset="img/gallery-five(1024).jpg" media="(max-width: 1024px)">
+                    <img class="swiper-image" src="img/gallery-five.jpg" alt="Казимир Малевич-Женщина с ведрами">
+                  </picture>
+                </button>
+              </li>
+              <li class="gallery__item swiper-slide">
+                <button class="gallery__card slide6 btn" tabindex="-1" data-animation="fadeInUp" data-btn="modal-two"
+                  data-speed="700" aria-label="Информация о живописи Казимир Малевич-Супрематизм">
+                  <picture>
+                    <source srcset="img/gallery-six(320).jpg" media="(max-width: 576px)">
+                    <source srcset="img/gallery-six(768).jpg" media="(max-width: 968px)">
+                    <source srcset="img/gallery-six(1024).jpg" media="(max-width: 1024px)">
+                    <img class="swiper-image" src="img/gallery-six.jpg" alt="Казимир Малевич-Супрематизм">
+                  </picture>
+                </button>
+              </li>
+            </ul>
           </div>
-          <div class="gallery__right-modal modal">
-            <div class="modal__content" data-card="modal-two">
-              <div class="modal__content-img">
-                <picture>
-                  <source srcset="img/gallery-modal1(320).jpg" media="(max-width: 700px)">
-                  <source srcset="img/gallery-modal1(768).jpg" media="(max-width: 968px)">
-                  <source srcset="img/gallery-modal1(1024).jpg" media="(max-width: 1224px)">
-                  <img class="modal-image" src="img/gallery-modal1.jpg" alt="Казимир Малевич-Женщины с граблями">
-                </picture>
-              </div>
-              <div class="modal__content-description">
-                <h2 class="modal__content-title title-style">Казимир Малевич</h2>
-                <h3 class="modal__content-subtitle">«Женщина с граблями»</h3>
-                <span class="modal__content-data data-style">1931–1932</span>
-                <p class="modal__content-desc desc-style">Картина из&nbsp;второй серии крестьянского цикла работ
-                  Казимира Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930&ndash;1931&nbsp;годах, после
-                  того, как&nbsp;первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок
-                  в&nbsp;1927&nbsp;году.</p>
-              </div>
-              <button class="btn modal__content-close" aria-label="Закрыть окно">
-                <span class="modal__content-close-line line1"></span>
-                <span class="modal__content-close-line line2"></span>
-              </button>
+        </div>
+        <div class="gallery__right-modal modal">
+          <div class="modal__content" data-card="modal-two">
+            <div class="modal__content-img">
+              <picture>
+                <source srcset="img/gallery-modal1(320).jpg" media="(max-width: 700px)">
+                <source srcset="img/gallery-modal1(768).jpg" media="(max-width: 968px)">
+                <source srcset="img/gallery-modal1(1024).jpg" media="(max-width: 1224px)">
+                <img class="modal-image" src="img/gallery-modal1.jpg" alt="Казимир Малевич-Женщины с граблями">
+              </picture>
             </div>
+            <div class="modal__content-description">
+              <h2 class="modal__content-title title-style">Казимир Малевич</h2>
+              <h3 class="modal__content-subtitle">«Женщина с граблями»</h3>
+              <span class="modal__content-data data-style">1931–1932</span>
+              <p class="modal__content-desc desc-style">Картина из&nbsp;второй серии крестьянского цикла работ
+                Казимира Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930&ndash;1931&nbsp;годах, после
+                того, как&nbsp;первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок
+                в&nbsp;1927&nbsp;году.</p>
+            </div>
+            <button class="btn modal__content-close" aria-label="Закрыть окно">
+              <span class="modal__content-close-line line1"></span>
+              <span class="modal__content-close-line line2"></span>
+            </button>
           </div>
         </div>
       </div>
+
     </section>
     <section class="catalog" id="catalog">
       <div class="container catalog__container">
-        <h1 class="catalog__title title">Каталог</h1>
+        <h2 class="catalog__title title">Каталог</h2>
         <p class="catalog__desc desc-style">
           Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа
           политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и&nbsp;морали. Являясь всего
@@ -799,7 +836,7 @@
           <div class="catalog__right">
             <ul class="accordion">
               <li class="accordion__item">
-                <button class="btn accordion__btn flex">
+                <button class="btn accordion__btn flex" aria-label="Открытие списка">
                   <span class="accordion__title title-style">C 1400&nbsp;по 1499&nbsp;гг</span>
                   <span class="accordion__btn-icon btn-style"></span>
                 </button>
@@ -929,7 +966,7 @@
                 </div>
               </li>
               <li class="accordion__item">
-                <button class="btn accordion__btn flex">
+                <button class="btn accordion__btn flex" aria-label="Открытие списка">
                   <span class="accordion__title title-style">C 1500&nbsp;по 1599&nbsp;гг</span>
                   <span class="accordion__btn-icon btn-style"></span>
                 </button>
@@ -946,7 +983,7 @@
                 </div>
               </li>
               <li class="accordion__item">
-                <button class="btn accordion__btn flex">
+                <button class="btn accordion__btn flex" aria-label="Открытие списка">
                   <span class="accordion__title title-style">C 1600&nbsp;по 1699&nbsp;гг</span>
                   <span class="accordion__btn-icon btn-style"></span>
                 </button>
@@ -963,7 +1000,7 @@
                 </div>
               </li>
               <li class="accordion__item">
-                <button class="btn accordion__btn flex">
+                <button class="btn accordion__btn flex" aria-label="Открытие списка">
                   <span class="accordion__title title-style">C 1700&nbsp;по 1799&nbsp;гг</span>
                   <span class="accordion__btn-icon btn-style"></span>
                 </button>
@@ -980,7 +1017,7 @@
                 </div>
               </li>
               <li class="accordion__item">
-                <button class="btn accordion__btn flex">
+                <button class="btn accordion__btn flex" aria-label="Открытие списка">
                   <span class="accordion__title title-style">C 1800&nbsp;по 1899&nbsp;гг</span>
                   <span class="accordion__btn-icon btn-style"></span>
                 </button>
@@ -997,7 +1034,7 @@
                 </div>
               </li>
               <li class="accordion__item">
-                <button class="btn accordion__btn flex">
+                <button class="btn accordion__btn flex" aria-label="Открытие списка">
                   <span class="accordion__title title-style">C 1900&nbsp;по 1999&nbsp;гг</span>
                   <span class="accordion__btn-icon btn-style"></span>
                 </button>
@@ -1014,7 +1051,7 @@
                 </div>
               </li>
               <li class="accordion__item">
-                <button class="btn accordion__btn flex">
+                <button class="btn accordion__btn flex" aria-label="Открытие списка">
                   <span class="accordion__title title-style">C 2000&nbsp;г</span>
                   <span class="accordion__btn-icon btn-style"></span>
                 </button>
@@ -1185,54 +1222,54 @@
               <button class="btn swiper-btn swiper-top-next3 btn-focuse projects__btn"
                 aria-label="Листать слайдер вперед"></button>
             </div>
-            <div class="swiper-wrapper">
-              <a class="swiper-slide projects__link" href="#">
-                <div class="projects__link-content">
+            <ul class="projects__list swiper-wrapper">
+              <li class="projects__item swiper-slide">
+                <a class="projects__link" href="#" tabindex="-1">
                   <img class="projects__image" src="img/projects-1.svg" alt="Logo freelands foundation">
-                </div>
-              </a>
-              <a class="swiper-slide projects__link" href="#">
-                <div class="projects__link-content">
+                </a>
+              </li>
+              <li class="projects__item swiper-slide">
+                <a class="projects__link" href="#" tabindex="-1">
                   <img class="projects__image" src="img/projects-2.svg" alt="Logo institut for contemporary art">
-                </div>
-              </a>
-              <a class="swiper-slide projects__link" href="#">
-                <div class="projects__link-content">
+                </a>
+              </li>
+              <li class="projects__item swiper-slide">
+                <a class="projects__link" href="#" tabindex="-1">
                   <img class="projects__image" src="img/projects-3.svg" alt="Logo workhouse arts center">
-                </div>
-              </a>
-              <a class="swiper-slide projects__link" href="#">
-                <div class="projects__link-content">
+                </a>
+              </li>
+              <li class="projects__item swiper-slide">
+                <a class="projects__link" href="#" tabindex="-1">
                   <img class="projects__image" src="img/projects-4.svg" alt="Logo 1849 wine co">
-                </div>
-              </a>
-              <a class="swiper-slide projects__link" href="#">
-                <div class="projects__link-content">
+                </a>
+              </li>
+              <li class="projects__item swiper-slide">
+                <a class="projects__link" href="#" tabindex="-1">
                   <img class="projects__image" src="img/projects-5.svg" alt="Logo hiscox">
-                </div>
-              </a>
-              <a class="swiper-slide projects__link" href="#">
-                <div class="projects__link-content">
+                </a>
+              </li>
+              <li class="projects__item swiper-slide">
+                <a class="projects__link" href="#" tabindex="-1">
                   <img class="projects__image" src="img/projects-6.svg" alt="Logo camden arts center">
-                </div>
-              </a>
-              <a class="swiper-slide projects__link" href="#">
-                <div class="projects__link-content">
+                </a>
+              </li>
+              <li class="projects__item swiper-slide">
+                <a class="projects__link" href="#" tabindex="-1">
                   <img class="projects__image" src="img/projects-7.svg" alt="Logo stassen premium belgian cider">
-                </div>
-              </a>
-              <a class="swiper-slide projects__link" href="#">
-                <div class="projects__link-content">
+                </a>
+              </li>
+              <li class="projects__item swiper-slide">
+                <a class="projects__link" href="#" tabindex="-1">
                   <img class="projects__image" src="img/projects-8.svg" alt="Logo watts gallery artists village">
-                </div>
-              </a>
-              <a class="swiper-slide projects__link" href="#">
-                <div class="projects__link-content">
+                </a>
+              </li>
+              <li class="projects__item swiper-slide">
+                <a class="projects__link" href="#" tabindex="-1">
                   <img class="projects__image" src="img/projects-9.svg"
                     alt="logo ecole superieure d'art et de design de valenciennes">
-                </div>
-              </a>
-            </div>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -1303,11 +1340,7 @@
   <footer class="footer" id="footer">
     <div class="container footer__container flex">
       <a class="footer__link" href="#">
-        <picture>
-          <source srcset="img/logo(320).svg" media="(max-width: 576px)">
-          <source srcset="img/logo(1024).svg" media="(max-width: 1224px)">
-          <img src="img/logo.svg" alt="Логотип Blanchard">
-        </picture>
+        <img class="footer__logo-img logo-img" src="img/logo.svg" alt="Логотип Blanchard">
       </a>
       <div class="footer__social flex">
         <a class="footer__social-icon icon-vk" href="#" aria-label="Вконтакте">
