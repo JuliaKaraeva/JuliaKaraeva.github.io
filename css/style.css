@@ -1266,10 +1266,11 @@ body {
 
 .gallery__card {
   position: relative;
-  height: initial;
   outline: 3px solid transparent;
   --moz-outline: 3px solid transparent;
   outline-offset: -2px;
+  width: 100%;
+  height: initial;
   font-size: 0;
   background-color: var(--color-text);
   transition: visibility .3s ease-in-out;
